@@ -1,0 +1,417 @@
+body.has-headband {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body {
+	zoom: 1 !important;
+	display: block;
+}
+
+#site {
+	box-sizing: border-box;
+	font-family: 'billy-regular', sans-serif;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#viewport {
+		height: calc(100vh - 30px);
+		position: relative;
+		min-height: 620px;
+		display: flex;
+		max-height: 852px;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#viewport #header {
+        flex-grow: 0;
+		flex-shrink: 0;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#header {
+        padding-top: 20px;
+		z-index: 98;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 150px;
+	}
+}
+
+#header {
+	display: flex;
+	pointer-events: none;
+}
+
+#header h1,
+#header h2 {
+	margin: 0;
+	padding: 0;
+}
+
+#header > * {
+	pointer-events: all;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#header .pbs-kids {
+		margin-left: 0;
+	}
+}
+
+#header .pbs-kids {
+	display: block;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#header .pbs-kids img {
+		width: 64px;
+	}
+}
+
+#header .pbs-kids img {
+	display: block;
+}
+
+#header h1,
+#header h2 {
+	margin: 0;
+	padding: 0;
+}
+
+#header .logo {
+	display: block;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#header .pbs-kids img {
+		width: 283px;
+		margin-left: 20px;
+	}
+}
+
+#header .logo img {
+	display: block;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#nav {
+		position: absolute;
+		height: 5.16667em;
+		width: 100%;
+		bottom: 0;
+		margin-bottom: 0.8em;
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+		pointer-events: none;
+	}
+}
+
+#nav {
+	z-index: 99;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#nav {
+		align-items: center;
+	}
+}
+
+#nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+#nav ul,
+#nav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#nav li[data-id="games"]{
+		margin-right: 0.4em;
+	}
+}
+
+#nav li[data-id="games"],
+#nav li[data-id="games"]::before,
+#nav li[data-id="games"]::after {
+	background-image: url('games-button.png');
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#nav li {
+		pointer-events: auto;
+	}
+}
+
+#nav li {
+	background-size: 200% auto;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 8.06667em;
+	height: 4.8em;
+	margin-top: 0.43333em;
+}
+
+#nav li::before {
+	background-position: top right;
+	transition: opacity 200ms ease-out;
+}
+
+#nav li::before,
+#nav li::after {
+	display: block;
+	content: "";
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: 200% auto;
+	background-repeat: no-repeat;
+}
+
+#nav li a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: 5;
+	color: #fff;
+	font-family: 'billy-bold', sans-serif;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#nav li [data-id="games"] .icon {
+		transform: translate(-55%, 10%);
+		width: 2.8em;
+		height: 2.13333em;
+	}
+}
+
+#nav li a .icon {
+	display: block;
+	left: 50%;
+	position: absolute;
+	z-index: 2;
+}
+
+#nav li[data-id="games"] .icon::before {
+	background-size: contain;
+}
+
+#nav li a .icon::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#nav li a .title {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translate(0, -50%);
+	text-align: center;
+	font-family: Courier;
+}
+
+#nav li::after {
+	background-position: bottom left;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#nav li[data-id="videos"] {
+		margin-right: 0.4em;
+	}
+}
+
+#nav li[data-id="videos"],
+#nav li[data-id="videos"]::before,
+#nav li[data-id="videos"]::after {
+	background-image: url('videos-button.png');
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#nav li[data-id="videos"] .icon {
+		transform: translate(-50%, -20%);
+		width: 2.2em;
+		height: 2.16667em;
+	}
+}
+
+#nav li[data-id="activities"],
+#nav li[data-id="activities"]::before,
+#nav li[data-id="activities"]::after {
+	background-image: url('activities-button.png');
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#nav li[data-id="activities"] .icon {
+		transform: translate(-58%, -20%);
+		width: 2.86667em;
+		height: 2.16667em;
+	}
+}
+
+#footer {
+	background-color: #fff;
+	position: relative;
+	padding: 1px 20px;
+}
+
+#footer::before {
+	content: "";
+	display: block;
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	top: -9px;
+	left: 0;
+	background: url('https://cms-tc.pbskids.org/cliffordwebsite/resources/static/global/footer/border.png') repeat-x top center;
+	background-size: auto 100%;
+	pointer-events: none;
+}
+
+  #footer2 {
+	background-color: #00b7ff;
+	position: relative;
+	padding: 1px 20px;
+}
+
+#footer::before {
+	content: "";
+	display: block;
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	top: -9px;
+	left: 0;
+	background: url('https://cms-tc.pbskids.org/cliffordwebsite/resources/static/global/footer/border.png') repeat-x top center;
+	background-size: auto 100%;
+	pointer-events: none;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#footer nav {
+		font-size: 28px;
+	}
+}
+
+#footer nav,
+#footer nav a {
+	font-family: Lucida Bright;
+	color: #000;
+}
+
+#footer nav {
+	font-family: 'billy-bold', sans-serif;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#footer nav ul {
+		margin: 30px -20px;
+	}
+}
+
+#footer nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#footer nav ul,
+#footer nav li {
+	list-style: none;
+	padding: 0;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#footer nav ll {
+		margin: 5px 20px;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#footer .credits {
+		font-size: 24px;
+	}
+}
+
+#footer .credits {
+	text-align: center;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#footer .credits ul {
+		margin-top: 5px;
+		margin-bottom: 30px;
+	}
+}
+
+#footer .credits ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#footer .credits ul,
+#footer .credits li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#footer .credits li {
+		margin: 5px 20px;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#footer .credits .scholastic img {
+		width: 180px;
+	}
+}
+
+#footer .credits .scholastic img {
+	min-width: 160px;
+}
+
+#footer .credits img {
+	display: block;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (min-width: 1025px) {
+	#footer .legal {
+		font-size: 16px;
+		margin: 40px auto;
+		max-width: 960px;
+	}
+}
+
+#footer .legal,
+#footer .legal a {
+	color: #000;
+}
+
+#footer .legal {
+	display: block;
+	text-align: center;
+}
+
